@@ -1,0 +1,290 @@
+body, html {
+    /* together with 100% height on the sections triggering full screen view */
+    height: 100%
+}
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #f0f0f0;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    color: #313131;
+    font-size: medium;
+}
+/* øverste bar på hjemmesiden */
+#stickynav {
+    width: 100%;
+    height: 225px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: #B5B2B0;
+    padding: 1px;
+    /* for the "tabbed" impression :-) */
+    overflow: hidden;
+	
+	
+}
+
+
+
+/* Interaktive knapper på siden */
+#stickynav a {
+    
+	
+    font-family: 'Lato', sans-serif;
+    /* størrelsen af knapperne*/
+	font-size: 2em;
+    color: #FFFFFF;
+    text-decoration: none;
+	/* selve længden af knapperne */
+    padding: 0.1px 0.1px;
+    background: #3D6BB4;
+ 
+	cursor: pointer;
+}
+
+
+
+#omos {
+	
+	margin-top: 5px;
+	margin-left: 500px;
+}
+
+#services {
+	
+	margin-top: 5px;
+	margin-left: 150px;
+}
+
+#hotbot2 {
+	margin-top: 5px;
+	margin-left: 150px; 
+	
+}
+
+#omosdropdown {
+	margin-top: 1px;
+	margin-left: 500px;
+	font-size: 0.6em;
+	
+}
+
+#servicesdropdown {
+	margin-top: 1px;
+	margin-left: 150px;
+	font-size: 0.8em;
+}
+
+
+/*highlight hover over menu*/
+#stickynav a:hover {
+    background: #749CD3;
+}
+
+.login:hover {
+	
+	background: #749CD3;
+}
+
+.login {
+	
+	align-content: center;
+	float: right;
+	
+	background: #3D6BB4;
+    border-radius: 1500px;
+	margin-top: 25px;
+	margin-right: 25px;
+	font-size: 25px;
+	font-family: 'Lato', sans-serif;
+	color: #FFFFFF;
+	
+	
+	
+		
+}
+
+/* overskrift på siden */
+h1 {
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 60px;
+	margin-top: 110px;
+	color: #3D6BB4;
+	
+	
+}
+
+/* animations slider til billede */
+@keyframes slider {
+	
+	0% {
+		left: 0;
+	}	
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50%{
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+
+	#slider {	
+		overflow: hidden;
+	}	
+	#slider figure img {
+		width: 100%;
+		float: center;
+	}
+	#slider figure {
+		position: relative;
+		width: 457%;
+		margin-right: 1px;
+		left: 1px;
+		text-align: left;
+		font-size: 0;
+		animation: 30s slider infinite;
+	}
+figure
+{
+	margin-top: 130px;
+	margin-left: 1px;
+}
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    position: absolute;
+}
+/*Create a horizontal list with spacing*/
+li {
+    display:inline-block;
+    float: left;
+    margin-right: 1px;
+}
+
+/*Style for menu links*/
+li a {
+    display:block;
+    min-width:140px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    background: #C9DB50;
+    text-decoration: none;
+}
+/*Hover state for top level links*/
+li:hover a {
+    background: #749CD3;
+}
+/*Style for dropdown links*/
+li:hover ul a {
+    background: #749CD3;
+    color: #749CD3;
+    height: 40px;
+    line-height: 40px;
+}
+/*Hover state for dropdown links*/
+#stickynav li:hover ul a:hover {
+    background: #749CD3;
+    color: #fff;
+}
+
+/*Hide dropdown links until they are needed*/
+li ul {
+    display: none;
+}
+/*Make dropdown links vertical*/
+li ul li {
+    display: block;
+    float: none;
+
+}
+/*Prevent text wrapping*/
+li ul li a {
+    width: auto;
+    min-width: 10px;
+    padding: 20px;
+}
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+}
+
+/*Responsive Styles*/
+@media screen and (max-width : 760px){
+    /*Make dropdown links appear inline*/
+    ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+}
+
+body section {
+	
+	margin-top: 90px;
+	
+}
+
+
+#webudvikling {
+	margin-left: 150px;
+	
+	
+}
+
+#branding {
+	margin-left: -50px;
+}
+
+#hotbot{
+	margin-left: -50px;
+	margin-bottom: 120px;
+	
+
+}
+
+#design{
+	margin-left: 68px;
+}
+
+#sikkerhed{
+	margin-left: -45px;
+}
+
+#baggrund {
+	margin-left: -50px;
+	margin-top: 200px;
+}
+
+
